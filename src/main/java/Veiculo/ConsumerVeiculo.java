@@ -18,7 +18,7 @@ public class ConsumerVeiculo {
 
         if (message instanceof TextMessage) {
             TextMessage textMessage = (TextMessage) message;
-            System.out.println("Recebi da Fila = '" + textMessage.getText() + "'");
+            System.out.println("Recebi da Fila: \n" + textMessage.getText());
         } else {
             System.out.println("** SEM MENSAGENS **  ");
         }
